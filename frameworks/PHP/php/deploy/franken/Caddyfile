@@ -13,5 +13,8 @@
 route {
     root * /php
 
-    php_server
+    php_server {
+        file_server off
+        resolve_root_symlink false
+    }
 }
